@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Language switcher — inherits the surrounding colour so it reads well both on
+   the dark video hero and on the light store header. */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  line-height: 1;
+  color: inherit;
+  white-space: nowrap;
+}
+.lang-switch > i {
+  font-size: 15px;
+  opacity: 0.8;
+}
+.lang-switch button {
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 2px 4px;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  opacity: 0.55;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: opacity 0.2s ease;
+}
+.lang-switch button:hover {
+  opacity: 0.85;
+}
+.lang-switch button.is-on {
+  opacity: 1;
+  font-weight: 700;
+}
+.lang-switch .sep {
+  opacity: 0.3;
+}
+.lang-switch.in-menu {
+  padding: 12px 2px;
+  font-size: 15px;
+}

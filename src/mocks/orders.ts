@@ -1,0 +1,82 @@
+/* STA storefront — sample past orders used to populate the "My Orders" page
+   before real orders exist. Static display data only (no backend yet). */
+
+export const sampleOrders = [
+  {
+    id: 'STA-2026-47921',
+    createdAt: 1788019200000,
+    status: 'transit',
+    tracking: 'STA-2609-K7P2QF',
+    eta: '5–9 أيام',
+    lines: [
+      {
+        id: 'dates-giftbox',
+        name: 'علبة هدايا التمور المشكّلة — 1.5 كجم',
+        image:
+          'https://readdy.ai/api/search-image?query=Elegant%20gift%20box%20of%20assorted%20Saudi%20dates%20with%20a%20folded%20kraft%20lid%20and%20ribbon%2C%20warm%20sand%20beige%20studio%20background%2C%20soft%20natural%20light%2C%20editorial%20product%20photography%2C%20high%20detail%2C%20warm%20neutral%20palette&width=900&height=900&seq=sta-prod-dates-gift-04&orientation=squarish',
+        factoryName: 'مصنع تمور الأحساء',
+        qty: 40,
+        unit: 138,
+        total: 5520,
+      },
+      {
+        id: 'coffee-arabic',
+        name: 'قهوة عربية بالهيل والزعفران — 250 جم',
+        image:
+          'https://readdy.ai/api/search-image?query=Saudi%20Arabic%20coffee%20ground%20with%20cardamom%20and%20saffron%20beside%20a%20small%20brass%20finjan%2C%20warm%20sand%20beige%20studio%20background%2C%20soft%20natural%20light%2C%20editorial%20product%20photography%2C%20high%20detail%2C%20warm%20neutral%20palette&width=900&height=900&seq=sta-prod-coffee-arabic-10&orientation=squarish',
+        factoryName: 'مزارع قهوة فيفا',
+        qty: 80,
+        unit: 44,
+        total: 3520,
+      },
+    ],
+    count: 120,
+    subtotal: 9040,
+    savings: 1120,
+    discount: 904,
+    shippingCost: 1980,
+    customs: 977,
+    total: 11093,
+    weightKg: 46,
+    customerName: 'محمد العامري',
+    country: 'الإمارات',
+    city: 'دبي',
+    port: 'ميناء جبل علي',
+    shippingMethod: 'شحن جوي سريع',
+    incoterm: 'CIF',
+    promoCode: 'STA10',
+  },
+  {
+    id: 'STA-2026-36014',
+    createdAt: 1784332800000,
+    status: 'delivered',
+    tracking: 'STA-2607-B3M9ZR',
+    eta: 'تم التسليم',
+    lines: [
+      {
+        id: 'beauty-rose',
+        name: 'عطر ورد الطائف المركّز — 50 مل',
+        image:
+          'https://readdy.ai/api/search-image?query=Elegant%20glass%20flacon%20of%20Taif%20rose%20perfume%20with%20a%20golden%20stopper%2C%20warm%20sand%20beige%20studio%20background%2C%20soft%20natural%20light%2C%20editorial%20product%20photography%2C%20high%20detail%2C%20warm%20neutral%20palette&width=900&height=900&seq=sta-prod-beauty-rose-08&orientation=squarish',
+        factoryName: 'معامل ورد الطائف',
+        qty: 60,
+        unit: 242,
+        total: 14520,
+      },
+    ],
+    count: 60,
+    subtotal: 14520,
+    savings: 2400,
+    discount: 0,
+    shippingCost: 1240,
+    customs: 1742,
+    total: 17502,
+    weightKg: 3,
+    customerName: 'محمد العامري',
+    country: 'المملكة المتحدة',
+    city: 'لندن',
+    port: 'ميناء فيليكستو',
+    shippingMethod: 'شحن بحري اقتصادي',
+    incoterm: 'DDP',
+  },
+];
